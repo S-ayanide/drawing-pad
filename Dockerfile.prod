@@ -1,5 +1,7 @@
 FROM node:alpine as build
 
+LABEL maintainer="sayanmondal342@gmail.com"
+
 WORKDIR /app
 COPY package.json .
 RUN npm install
